@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  nav li {
+    @apply transition-colors hover:text-blue-500;
+  }
+
+  figure {
+    @apply rounded border text-center shadow-md shadow-gray-300 transition-all hover:-translate-y-2 hover:shadow-xl;
+  }
+
+  figure img {
+    @apply rounded-t;
+  }
+
+  figure h2 {
+    @apply mt-1 font-semibold;
+  }
+
+  figure button {
+    @apply mt-2 mb-4 rounded bg-green-500 px-2 py-2 text-white shadow-sm;
+  }
+
+  section > h2 {
+    @apply my-4 text-center text-2xl font-bold text-green-700;
+  }
+}

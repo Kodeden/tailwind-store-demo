@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tailwind Demo Store</title>
+  </head>
+  <body>
+    <header class="bg-slate-900 pt-4 pb-6 text-white">
+      <h1 class="text-center text-3xl text-red-500">Store</h1>
+      <nav class="my-4">
+        <ul class="flex justify-center gap-x-4 font-medium">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <form class="flex justify-center gap-x-2">
+        <label for="search" class="sr-only">Search</label>
+        <input
+          id="search"
+          type="text"
+          placeholder="Search products"
+          class="rounded pl-1"
+        />
+        <button
+          class="rounded bg-blue-500 px-4 py-2 transition-colors hover:bg-blue-700"
+        >
+          Search
+        </button>
+      </form>
+    </header>
+
+    <main>
+      <section id="featured-products">
+        <h2>Featured Products</h2>
+        <ul class="flex gap-x-4 px-4">
+          <li>
+            <figure>
+              <img
+                src="https://source.unsplash.com/random/640x480?football"
+                alt=""
+              />
+              <figcaption>
+                <h2>Football</h2>
+                <p>$50.00</p>
+                <button>Add to Cart</button>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://source.unsplash.com/random/640x480?baseball"
+                alt=""
+              />
+              <figcaption>
+                <h2>Baseball</h2>
+                <p>$10.00</p>
+                <button>Add to Cart</button>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://source.unsplash.com/random/640x480?basketball"
+                alt=""
+              />
+              <figcaption>
+                <h2>Basketball</h2>
+                <p>$30.00</p>
+                <button>Add to Cart</button>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <section id="new-arrivals">
+        <h2>New Arrivals</h2>
+        <ul class="flex flex-col gap-y-6 px-4">
+          <li>
+            <figure>
+              <img
+                src="https://source.unsplash.com/random/640x480?tablet"
+                alt=""
+              />
+              <figcaption>
+                <h2>iPod</h2>
+                <p>$300.00</p>
+                <button>Add to Cart</button>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://source.unsplash.com/random/640x480?starship"
+                alt=""
+              />
+              <figcaption>
+                <h2>Star Ship</h2>
+                <p>$300.00</p>
+                <button>Add to Cart</button>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="https://source.unsplash.com/random/640x480?necklace"
+                alt=""
+              />
+              <figcaption>
+                <h2>Necklace</h2>
+                <p>$3000.00</p>
+                <button>Add to Cart</button>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="py-4 text-center bg-slate-900 text-white">
+      <p>Copyright ©2022 E-Commerce Website</p>
+    </footer>
+  </body>
+</html>
